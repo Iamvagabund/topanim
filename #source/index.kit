@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сайт</title>
+<link rel="stylesheet" type="text/css" href="css/materialize.css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/materialize.min.js"></script>
+
+
+<script>
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			//options here
+			autoScrolling:true,
+			afterLoad: function(anchorLink, index){
+		        var loadedSection = $(this);
+		        //using index
+		        if(index == 1){
+		        	setTimeout(function() {
+		        		$('.title1, .mid, .dep_animate, .depos_text_animate, .take_bonus1, .mid5').addClass('active');
+		        	}
+			    )} else if(index !== 1){
+		        		$('.title1, .mid, .dep_animate, .depos_text_animate, .take_bonus1').removeClass('active');
+		        	}
+		        if(index == 2){
+		        	setTimeout(function() {
+		        		$('.take_bonus1, .title2, .circle-main, .first-row, .second-row, .third-row, .fourth-row, .fifth-row, .first-text-row, .second-text-row, .third-text-row, .fourth-text-row, .fifth-text-row, .mid5').addClass('active');
+		        	})
+		        } else if(index !== 2) {
+		        	$('.title2, .circle-main, .first-row, .second-row, .third-row, .fourth-row, .fifth-row, .first-text-row, .second-text-row, .third-text-row, .fourth-text-row, .fifth-text-row').removeClass('active');
+		        } 
+		        if(index ==3) {
+		        	$('.take_bonus1').addClass('active');
+		        }
+	    	}
+
+		});
+		//adding the action to the button
+		$(document).on('click', '#moveDown', function(){
+  			$.fn.fullpage.moveSectionDown();
+		});
+	});
+</script>
+
+</head>
+<body>
+<!-- @import "header.kit" -->
+<div id="fullpage">
+	<section class="section section1">
+		<div class="section_content">
+			<div class="title title1">
+				<h1>ох*енные бонусы</h1>
+			</div>
+			<div class="title-mob">
+				<div class="first-word">ох*енные</div>
+				<div class="second-word">бонусы</div>
+			</div>
+			<div class="content">
+				<div class="section1_content">
+					<div class="depos">
+						<div class="depos_left dep_animate"><div class="depos-text depos_text_animate">100 000₽</div></div>
+						<div class="mid">1 депозит</div>
+						<div class="depos_right dep_animate"><div class="depos-text depos_text_animate">+100%</div></div>
+					</div>
+
+					<div class="depos">
+						<div class="depos_left depos_left2 dep_animate"><div class="depos-text2 depos_text_animate">15 000₽</div></div>
+						<div class="mid mid2">2 депозит</div>
+						<div class="depos_right depos_right2 dep_animate"><div class="depos-text2 depos_text_animate">+100%</div></div>
+					</div>
+
+					<div class="depos">
+						<div class="depos_left depos_left3 dep_animate"><div class="depos-text3 depos_text_animate">20 000₽</div></div>
+						<div class="mid mid3">3 депозит</div>
+						<div class="depos_right depos_right3 dep_animate"><div class="depos-text3 depos_text_animate">+50%</div></div>
+					</div>
+
+					<div class="depos">
+						<div class="depos_left depos_left4 dep_animate"><div class="depos-text4 depos_text_animate">25 000₽</div></div>
+						<div class="mid mid4">4 депозит</div>
+						<div class="depos_right depos_right4 dep_animate"><div class="depos-text4 depos_text_animate">+50%</div></div>
+					</div>
+
+					<div class="depos">
+						<div class="depos_left depos_left5 dep_animate"><div class="depos-text5 depos_text_animate">37 500₽</div></div>
+						<div class="mid mid5"><div>5 депозит</div></div>
+						<div class="depos_right depos_right5 dep_animate"><div class="depos-text5 depos_text_animate">+20%</div></div>
+					</div>
+				</div>
+			</div>
+			<div class="take_bonus take_bonus1">
+				<button id="takeBonus">Забрать бонусы</button>
+			</div>
+			<div id="moveDown" class="arrow"></div>
+			<div class="small-circle"></div>
+		</div>
+	</section>
+	<section class="section section2">
+		<div class="section_content">
+			<div class="title title2">
+				<h1>Лучшее казино</h1>
+				<h1>в СНГ</h1>
+			</div>
+			<div class="circle-main">
+				<div class="slot-left circle-icons first-row left-part-circle"></div>
+				<div class="slot-left-text circle-text first-text-row left-part-circle">170 столов с лайв-диллерами</div>
+				<div class="tournament circle-icons second-row left-part-circle"></div>
+				<div class="tournament-text circle-text second-text-row left-part-circle">Еженедельные турниры</div>
+				<div class="cashback circle-icons third-row left-part-circle"></div>
+				<div class="cashback-text circle-text  third-text-row left-part-circle">Кэшбек до 10%</div>
+				<div class="ticket circle-icons fourth-row left-part-circle"></div>
+				<div class="ticket-text circle-text fourth-text-row left-part-circle">Розыгрыши ценных призов</div>
+				<div class="eye circle-icons fifth-row left-part-circle"></div>
+				<div class="eye-text circle-text fifth-text-row left-part-circle">Полная конфиденциальность</div>
+
+				<div class="realWin circle-icons first-row"></div>
+				<div class="realWin-text circle-text first-text-row">Реальные выиграши</div>
+				<div class="bigBonus circle-icons second-row"></div>
+				<div class="bigBonus-text circle-text second-text-row">Огромные бонусы</div>
+				<div class="liveDealer circle-icons third-row "></div>
+				<div class="liveDealer-text circle-text third-text-row">Live-диллеры</div>
+				<div class="slots circle-icons fourth-row"></div>
+				<div class="slots-text circle-text fourth-text-row">1000+ слотов</div>
+				<div class="world circle-icons fifth-row"></div>
+				<div class="world-text circle-text fifth-text-row">24/7 с любой точки мира</div>
+			</div>
+			<div id="moveDown" class="arrow"></div>
+		</div>
+	</section>
+	<section class="section section3">
+	    <div class="section_content">
+			<div class="title title3">
+				<h1>Топ слоты</h1>
+				<h2>от лучших производителей</h2>
+			</div>
+			<div class="carousel">
+			  	<a class="carousel-item ca1" href="#one!"></a>
+			  	<a class="carousel-item ca2" href="#two!"></a>
+			  	<a class="carousel-item ca3" href="#three!"></a>
+			    <a class="carousel-item ca4" href="#four!"></a>
+			    <a class="carousel-item ca5" href="#five!"></a>
+			 </div>
+			 <div class="take_bonus take_bonus2">
+				<button id="takeBonus2">Регистрация</button>
+			</div>
+
+
+			<!-- @import "footer.kit" -->
+		</div>
+	</section>
+</div>
+<script src="js/jquery.fullpage.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	if($(window).width() >= 470){
+		$('.carousel').carousel({
+			numVisible: 5,
+			dist: -50
+		});
+	} else {
+		$('.carousel').carousel({
+			numVisible: 3,
+			dist: -50
+		});
+	}
+autoplay();
+function autoplay() {
+	$('.carousel').carousel('next');
+	setTimeout(autoplay, 1500);
+}
+});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		 $('.carousel-mob').carousel({
+			fullWidth: true,
+		 });
+	autoplay();
+	function autoplay() {
+		$('.carousel-mob').carousel('next');
+		setTimeout(autoplay, 1500);
+	}
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+footer {
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	z-index:2;
+	height: 7.7rem;
+	background-color: #242424;
+	width: 100%;
+	color: #fff;
+	& .content-mob {
+		display: none;
+	}
+}
+.footer_logo {
+	& a {
+		display: block;
+		background: no-repeat;
+		background-position: 50% 50%;
+    	height: 100%;
+    	width: 100%;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	&:hover img {
+			opacity: 1;
+		}
+	}
+	& img {
+			opacity: 0;
+			transition: 0.2s;
+		}
+}
+.netent a {
+	background-image: url(../img/netent.png);
+}
+.microgaming a {
+	background-image: url(../img/microgaming.png);
+}
+.novomatic a {
+	background-image: url(../img/novomatic.png);
+}
+.quickspin a {
+	background-image: url(../img/quickspin.png);
+}
+.ygg a {
+	background-image: url(../img/ygg.png);
+}
+.playtech a {
+	background-image: url(../img/playtech.png);
+}
+.booon a {
+	background-image: url(../img/booon.png);
+}

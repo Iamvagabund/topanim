@@ -1,0 +1,51 @@
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 65rem;
+  -webkit-perspective: 56rem;
+          perspective: 56rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+
+.carousel .carousel-item {
+  visibility: hidden;
+  width: 200px;
+  height: 100%;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+.ca1 {
+  background-image: url(../img/gonzo.png);
+
+}
+.ca2 {
+  background-image: url(../img/sakura.png);
+
+}
+.ca3 {
+  background-image: url(../img/jurassic.png);
+
+}
+.ca4 {
+  background-image: url(../img/midas.png);
+
+}
+.ca5 {
+  background-image: url(../img/vikings.png);
+
+}
+
+
+

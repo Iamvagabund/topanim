@@ -1,0 +1,96 @@
+/* animate css */
+.arrow_move {
+  animation: arrow_move .6s alternate infinite ease-in;
+  animation-fill-mode: backwards;
+}
+@keyframes arrow_move {
+    0% {
+        bottom: 2rem;
+    }    
+    100% {
+        bottom: 1rem;
+    } 
+}
+/* animate section1 */
+.title1.active, .title2.active {
+	opacity: 1;
+}
+.mid.active {
+	opacity: 1;
+}
+.depos_left.active:before, .depos_right.active:before {
+  	transform: translateX(0);
+}
+.depos_text_animate.active {
+	opacity: 1;
+}
+
+.mid5.active:before {
+  	transform: translateY(-24%);
+}
+.take_bonus1.active {
+	margin-top: 0;
+	opacity:1;
+}
+/* animate section2 */
+.circle-main.active {
+	opacity: 1;
+}
+.first-row.active {
+	transition-delay: 0.5s;
+}
+.second-row.active {
+	transition-delay: 1s;
+}
+.third-row.active {
+	transition-delay: 1.5s;
+}
+.fourth-row.active {
+	transition-delay: 2s;
+}
+.fifth-row.active {
+	transition-delay: 2.5s;
+}
+.first-row.active, .second-row.active, .third-row.active, .fourth-row.active, .fifth-row.active {
+	opacity: 1;
+}
+.slot-left-text.active  {
+	left: 20%;
+	transition-delay: 0.4s;
+}
+.realWin-text.active {
+	right: 25%;
+	transition-delay: 0.4s;
+}
+.tournament-text.active {
+	left: 18%;
+	transition-delay: 0.8s;
+}
+.bigBonus-text.active {
+	right: 21%;
+	transition-delay: 0.8s;
+}
+.cashback-text.active {
+	left: 21%;
+	transition-delay: 1.2s;	
+}
+.liveDealer-text.active {
+	right: 22%;
+	transition-delay: 1.2s;
+}
+.ticket-text.active {
+	left: 15%;
+	transition-delay: 1.6s;	
+}
+.slots-text.active {
+	right: 24%;
+	transition-delay: 1.6s;
+}
+.eye-text.active {
+	left: 20%;
+	transition-delay: 2s;	
+}
+.world-text.active {
+	right: 23%;
+	transition-delay: 2s;
+}

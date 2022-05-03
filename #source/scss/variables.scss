@@ -1,0 +1,22 @@
+//Переменная для резинового сайта. 1 rem = 10px * 10/1920 (ширина экрана) * 100 = 0.52083333333vw
+$rubberSite: 0.52083333333vw;
+%BebasFont {
+	font-family: 'BebasNeue';
+}
+%GeometriaFont {
+	font-family: 'Geometria';
+	font-weight: bold;
+}
+%BankGothicFont {
+	font-family: 'BankGothic';
+	font-weight: normal;
+}
+$textColor: #474753;
+%bg_circle {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a465f3+0,bb75e8+41,dc8bd7+66,f79eca+100 */
+	background: #a465f3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a465f3 0%, #bb75e8 41%, #dc8bd7 66%, #f79eca 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #a465f3 0%,#bb75e8 41%,#dc8bd7 66%,#f79eca 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #a465f3 0%,#bb75e8 41%,#dc8bd7 66%,#f79eca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a465f3', endColorstr='#f79eca',GradientType=0 ); /* IE6-9 */
+}

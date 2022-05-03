@@ -1,0 +1,22 @@
+// миксин для передачи цвета и размера шрифта
+@mixin colorFontSize ($color, $fontS) {
+	color: $color;
+	font-size: $fontS;
+}
+
+// миксин падинг 
+@mixin padd ($padd...) {
+	padding: $padd;
+}
+
+// миксин для ссылок
+@mixin link ($link, $hover, $active) {
+	color: $link;
+
+	&:hover {
+		color: $hover;
+	}
+	&:active {
+		color: $active;
+	}
+}

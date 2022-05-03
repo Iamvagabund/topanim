@@ -1,0 +1,49 @@
+/* header css */
+header {
+	position:fixed;
+	display: flex;
+	z-index:2;
+	height: 7.7rem;
+	background-color: #242424;
+	width: 100%;
+	color: #fff;
+}
+.content {
+	display: flex;
+	width:(1366px / 1920px * 100%);
+	margin:0 auto;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	& a{
+	@extend %BankGothicFont;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 4rem;
+	cursor: pointer;
+	}
+}
+.comeIn {
+	display: flex;
+	align-items: center;
+	& div p {
+		font-size: 2rem;
+		text-transform: uppercase;
+		margin-right: 2.5rem;
+	}
+	& button {
+		background-color: #ff7e15;
+		padding: 0.5rem 3.5rem;
+		border-radius: 3.5rem;
+		color: #fff;
+		text-transform: uppercase;
+		@extend %BebasFont;
+		font-size: 2rem;
+		transition: .15s;
+		&:hover {
+			text-decoration: underline;
+			background-color: #ed6b00;
+		}
+	}
+}
